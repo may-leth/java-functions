@@ -1,3 +1,23 @@
+import java.util.Scanner;
+
+public class Welcome {
+    public static void main(String[] args) {
+        greeting();
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("¿Cuál es tu nombre?");
+        String name = scanner.nextLine();
+        greetingCoder(name);
+    }
+
+    public static void greeting(){
+        System.out.println("¡Hola FemCoder!");
+    }
+
+    public static void greetingCoder(String name){
+        System.out.println("¡Hola " + name + "!");
+    }
+}
 //Inicializa la clase Welcome
 //Crea el método main
 
