@@ -15,7 +15,9 @@ public class BuiltInFunctions {
          */
 
         // Escribe tu código aquí
-        
+        public static void printMessage(String message) {
+            System.out.println(message);
+        }
 
         /**
          * Function name: getLength
@@ -28,7 +30,9 @@ public class BuiltInFunctions {
          */
 
         // Escribe tu código aquí
-
+        public static int getLength(String message) {
+            return message.length();
+        }
 
         /**
          * Function name: convertToLowercase
@@ -41,7 +45,9 @@ public class BuiltInFunctions {
          */
 
         // Escribe tu código aquí
-
+        public static String convertToLowercase(String message) {
+            return message.toLowerCase();
+        }
 
         /**
          * Function name: findPrefix
@@ -55,7 +61,9 @@ public class BuiltInFunctions {
          */
 
         // Escribe tu código aquí
-
+        public static boolean findPrefix(String message, String prefix) {
+            return
+        }
 
         /**
          * Function name: replaceCharacters
