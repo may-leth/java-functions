@@ -14,7 +14,7 @@ public class DocComments {
         String classification = bmiResults(bmi);
         System.out.println("La clasificacion de tu BMI es: " + classification);
 
-        double otherBmi = calculateBodyMassIndex(1.60, 80.0);
+        double otherBmi = calculateBodyMassIndex(1.60, 100.5);
         String otherClassification = bmiResults(otherBmi);
         System.out.println("La clasificación de tu BMI es: " + otherClassification);
     }
