@@ -11,9 +11,12 @@ public class DocComments {
         System.out.println(bmi);
 
         //Ejecuta el nuevo método
-        bmiResults(bmi);
-        double otherBmi = calculateBodyMassIndex(1.60, 80);
-        bmiResults(otherBmi);
+        String classification = bmiResults(bmi);
+        System.out.println("La clasificacion de tu BMI es: " + classification);
+
+        double otherBmi = calculateBodyMassIndex(1.60, 80.0);
+        String otherClassification = bmiResults(otherBmi);
+        System.out.println("La clasificación de tu BMI es: " + otherClassification);
     }
 
     /**
@@ -69,29 +72,29 @@ public class DocComments {
     Obeso Clase II	35 - 40
     Obeso Clase III	> 40 */
 
-    public static void bmiResults(double bmi) {
+    public static String bmiResults(double bmi) {
         if (bmi < 16) {
-            System.out.println("Delgadez Severa");
-        } else if (bmi >= 16 && bmi < 17) {
-            System.out.println("Delgadez moderada");
-        } else if (bmi >= 17 && bmi < 18.5) {
-            System.out.println("Delgadez leve");
-        } else if (bmi >= 18.5 && bmi < 25) {
-            System.out.println("Normal");
-        } else if (bmi >= 25 && bmi < 30) {
-            System.out.println("Sobrepeso");
-        } else if (bmi >= 30 && bmi < 35) {
-            System.out.println("Obeso Clase I");
-        } else if (bmi >= 35 && bmi < 40) {
-            System.out.println("Obeso Clase II");
+            return "Delgadez Severa";
+        } else if (bmi < 17) {
+            return "Delgadez moderada";
+        } else if (bmi < 18.5) {
+            return "Delgadez leve";
+        } else if (bmi < 25) {
+            return "Normal";
+        } else if (bmi < 30) {
+            return "Sobrepeso";
+        } else if (bmi < 35) {
+            return "Obeso Clase I";
+        } else if (bmi < 40) {
+            return "Obeso Clase II";
         } else {
-            System.out.println("Obeso Clase III");
+            return "Obeso Clase III";
         }
     }
-
     /**
      * Function name: bmiResults
      * @param bmi (double)
+     * @return (String)
      * Inside the function:
      * 1. Prints a message depending on the BMI classification range.
      */
